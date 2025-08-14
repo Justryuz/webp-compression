@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebP Compression Engine Pro</title>
+    <title>WebP Compression</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -358,8 +358,8 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🚀 WebP Compression Engine Pro</h1>
-            <p class="subtitle">Advanced WebP optimization for web performance</p>
+            <h1> WebP Compression</h1>
+            <p class="subtitle">WebP optimization for web performance</p>
         </div>
         
         <div class="upload-zone" onclick="document.getElementById('fileInput').click()">
@@ -372,7 +372,7 @@
         <div class="engine-controls">
             <div class="control-panel">
                 <div class="control-title">
-                    🎯 Web Optimization Presets
+                     Web Optimization Presets
                 </div>
                 <div class="preset-buttons">
                     <div class="preset-btn active" data-preset="web">Web Optimized</div>
@@ -384,7 +384,7 @@
             
             <div class="control-panel">
                 <div class="control-title">
-                    ⚙️ Quality Control
+                     Quality Control
                 </div>
                 <div class="slider-group">
                     <div class="slider-label">
@@ -397,7 +397,7 @@
             
             <div class="control-panel">
                 <div class="control-title">
-                    📏 Smart Resize
+                     Smart Resize
                 </div>
                 <div class="slider-group">
                     <div class="slider-label">
@@ -416,7 +416,7 @@
             
             <div class="control-panel">
                 <div class="control-title">
-                    🧠 AI Enhancement
+                     AI Enhancement
                 </div>
                 <div class="slider-group">
                     <div class="slider-label">
@@ -441,13 +441,13 @@
         <div class="processing-area" id="processingArea">
             <div class="comparison-grid">
                 <div class="image-panel">
-                    <div class="panel-title">📷 Original Image</div>
+                    <div class="panel-title"> Original Image</div>
                     <img class="preview-image" id="originalImage" alt="Original">
                     <div class="image-stats" id="originalStats"></div>
                 </div>
                 
                 <div class="image-panel">
-                    <div class="panel-title">🗜️ WebP Optimized</div>
+                    <div class="panel-title">🗜 WebP Optimized</div>
                     <img class="preview-image" id="compressedImage" alt="Compressed">
                     <div class="image-stats" id="compressedStats"></div>
                     <div class="compression-score" id="compressionScore"></div>
@@ -456,26 +456,15 @@
             
             <div class="action-bar">
                 <a class="btn btn-primary" id="downloadBtn" download>
-                    💾 Download WebP
+                     Download WebP
                 </a>
                 <button class="btn btn-primary" onclick="processAllFiles()" id="batchBtn" style="display: none;">
-                    🚀 Process All
+                     Process All
                 </button>
                 <button class="btn btn-secondary" onclick="reset()">
-                    🔄 New Image
+                     New Image
                 </button>
             </div>
-        </div>
-        
-        <div class="optimization-tips">
-            <div class="tip-title">🏆 WebP Optimization Tips</div>
-            <ul class="tip-list">
-                <li>WebP reduces file size by 25-35% compared to JPEG</li>
-                <li>Use quality 80-85 for perfect balance of size vs quality</li>
-                <li>Progressive loading improves perceived performance</li>
-                <li>Resize images to actual display dimensions</li>
-                <li>Hero images: 1920px max, Thumbnails: 400px max</li>
-            </ul>
         </div>
     </div>
 
@@ -662,7 +651,7 @@
             // Compression score
             const score = calculateWebScore(originalFile, compressedFile, compressionRatio);
             document.getElementById('compressionScore').innerHTML = 
-                `🏆 Web Score: ${score}/100 • ${compressionRatio}% size reduction`;
+                ` Web Score: ${score}/100 • ${compressionRatio}% size reduction`;
             
             // Download link
             const downloadBtn = document.getElementById('downloadBtn');
